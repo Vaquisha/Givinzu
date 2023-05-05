@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('inicio');
+    return view('auth/inicio');
 });
 /* crear-cuenta se encuenta -> layout/app */
 Route::get('/crear-cuenta', function () {

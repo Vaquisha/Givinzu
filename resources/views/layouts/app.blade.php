@@ -6,6 +6,7 @@
 
         <title>Inicio - VinZu 1.0 - @yield('titulo')</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     </head>
     <body class=" bg-gray-300">
             {{-- p -> Padding espacio del cuador --}}
@@ -14,7 +15,7 @@
               <h1 class="fs-7 font-weight-bold text-white mr-auto">
                 VinZu 1.0
               </h1>
-          {{-- gap-4 -> damos espacion entre hambas etiquetas --}}
+          {{-- gap-4 -> damos espacion entre ambas etiquetas --}}
               <nav class="ml-auto d-flex gap-4">
                 <a class="font-weight-bold 
                 text-uppercase text-white 
