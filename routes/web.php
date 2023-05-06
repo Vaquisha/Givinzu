@@ -14,9 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth/inicio');
+    return view('auth.inicio');
 });
 /* crear-cuenta se encuenta -> layout/app */
 Route::get('/crear-cuenta', function () {
-    return view('auth/register');
+    return view('auth.register');
+});
+
+
+/* crear-cuenta se encuenta -> layout/app */
+Route::get('/muro.inicio', function () {
+    return view('auth.muro');
 });
