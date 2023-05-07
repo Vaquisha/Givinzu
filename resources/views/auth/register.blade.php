@@ -1,31 +1,37 @@
 @extends('layouts.app')
 
 @section('contenido')
-<div class="container-fluid d-flex justify-content-center">
-    <form class="mb-3">
-<!-- Titulo del formulario -->
-    <h1>Regístrate</h1>
-<!-- Input de tu usuario -->
-    <div class="contenedor">
-        <div class="input-contenedor">
-        <label for="exampleInputEmail1" class="form-label">Nombre</label>
-            <input type="text" placeholder="Nombre" class="form-control mt-auto">
-        </div>
-<!-- Input de tu correo electrónico -->
-        <div class="input-contenedor">
-        <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-            <input type="email" placeholder="Email" class="form-control mt-auto">
-        </div>
-<!-- Input de tu contraseña -->
-        <div class="input-contenedor">
-        <label for="exampleInputEmail1" class="form-label">Contraseña</label>
-            <input type="password" placeholder="Contraseña" class="form-control mt-auto">
-        </div>
-<!--Botón de registro -->        
-        <input type="submit" value="Regístrate" class="btn btn-primary p-auto mb-3">
-
-        <a class="link" href="/">Iniciar sesión</a>
+<div class="d-flex justify-content-center gap-3 align-items-center p-5">
+    <div class="col-md-4 bg-light p-4 rounded shadow-lg">
+        <form>
+            {{--Nombre--}}
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Tu Nombre" class="form-control"">
+            </div>
+            {{-- Nombre de Usuario --}}
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input id="username" name="username" type="text" placeholder="Tu Nombre de Usuario" class="form-control">
+            </div>
+            {{-- Correo Electronico --}}
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="text" placeholder="Tu Email de Registro" class="form-control">
+            </div>
+            {{-- Contraseña --}}
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password de Registro" class="form-control">
+            </div>
+            {{-- Repetir Contraseña --}}
+            <div class="mb-3">
+                <label for="password_confirmation" class="form-label">Repetir Password</label>
+                <input id="password_confirmation" name="password_confirmation" type="password" placeholder="Repite tu Password" class="form-control">
+            </div>
+            {{-- Boton Registrar --}}
+            <button type="submit" class="btn btn-primary w-100">Crear Cuenta</button>
+        </form>
     </div>
-    </form>
-</div>
+</div> 
 @endsection

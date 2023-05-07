@@ -20,7 +20,7 @@
                 <a class="font-weight-bold 
                 text-uppercase text-white 
                 text-sm-center 
-                text-decoration-none" href="#">Iniciar Sesión</a>
+                text-decoration-none" href=/>Iniciar Sesión</a>
                 <a class="font-weight-bold 
                 text-uppercase text-white 
                 text-sm-center 

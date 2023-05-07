@@ -24,5 +24,5 @@ Route::get('/crear-cuenta', function () {
 
 /* crear-cuenta se encuenta -> layout/app */
 Route::get('/muro.inicio', function () {
-    return view('auth.muro');
+    return view('muro');
 });
