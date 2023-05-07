@@ -20,7 +20,10 @@ Route::get('/', function () {
 });
 
 /* crear-cuenta se encuenta -> layout/app */
+/* Metodo get solo cuando visitamos un sitios */
 Route::get('/register', [RegisterController::class, 'index']);
+/* Metodo post cuando enviamos informacion hacia un servidor */
+Route::post('/register', [RegisterController::class, 'store']);
 
 
 /* Vista de ventada una vez iniciado sesion */
