@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,13 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('auth.inicio');
 });
-/* crear-cuenta se encuenta -> layout/app */
-Route::get('/crear-cuenta', function () {
-    return view('auth.register');
-});
-
 
 /* crear-cuenta se encuenta -> layout/app */
-Route::get('/muro.inicio', function () {
-    return view('muro');
-});
+Route::get('/register', [RegisterController::class, 'index']);
+
+
+/* Vista de ventada una vez iniciado sesion */
+Route::get('/principal', [PrincipalController::class, 'principal']);
